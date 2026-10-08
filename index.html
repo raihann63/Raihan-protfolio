@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MD Raihan Ali | ML Engineer & AI Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">Raihan<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/resume.pdf" class="btn-resume" download>
+      <i class="fas fa-download"></i> Resume
+    </a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-greeting">👋 Hello, I am</p>
+      <h1 class="hero-name">MD Raihan Ali</h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-static">I am a </span>
+        <span class="hero-typed" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Computer Science Engineer specializing in Machine Learning, AI Automation,
+        and Federated Learning. I design and deploy end-to-end AI pipelines,
+        automate workflows, and build solutions for real-world challenges.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/raihaan-du-ml/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/raihann63" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.kaggle.com/raihan63" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+        <a href="https://scholar.google.com/citations?user=your-id" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="mailto:mrali02@niter.edu.bd" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-ring">
+        <img src="assets/pic.png" alt="MD Raihan Ali" class="profile-img"
+          onerror="this.src='https://ui-avatars.com/api/?name=MD+Raihan+Ali&background=6c63ff&color=fff&size=300'"/>
+      </div>
+      <div class="floating-badge badge-1"><i class="fab fa-python"></i> Python</div>
+      <div class="floating-badge badge-2"><i class="fas fa-brain"></i> ML / DL</div>
+      <div class="floating-badge badge-3"><i class="fas fa-robot"></i> Generative AI</div>
+      <div class="floating-badge badge-4"><i class="fas fa-robot"></i> AI Automation</div>
+
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll Down</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+
+<!-- ========== ABOUT ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get to know me</span>
+      <h2 class="section-title">About <span>Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-box">
+        <img src="assets/raihannn.png" alt="Raihan Ali"
+          onerror="this.src='https://ui-avatars.com/api/?name=MD+Raihan+Ali&background=6c63ff&color=fff&size=300'"/>
+        <div class="about-info-cards">
+          <div class="info-card">
+            <span class="info-num">3.51</span>
+            <span class="info-label">CGPA / 4.00</span>
+          </div>
+          <div class="info-card">
+            <span class="info-num" id="totalProjectCount">0</span>
+            <span class="info-label">Total Projects</span>
+          </div>
+          <div class="info-card">
+            <span class="info-num" id="internshipCount">0</span>
+            <span class="info-label">Internships</span>
+          </div>
+          <div class="info-card">
+            <span class="info-num" id="certCount">0</span>
+            <span class="info-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h3>ML Engineer | AI Researcher | AI Automation Specialist</h3>
+        <p>
+          I am a Computer Science student at the University of Dhaka with a strong focus on
+          Data Science, Machine Learning,Artificial Intelligence and AI Automation. I enjoy solving real-world
+          problems through data-driven thinking and building practical intelligent systems that
+          are both effective and scalable.
+        </p>
+        <p>
+          My interests include predictive modeling, deep learning, federated learning,
+          automation workflows, and applied AI research. Through academic projects, internships,
+          and continuous self-learning, I have developed hands-on experience in building machine
+          learning models, analyzing data, and creating end-to-end solutions.
+        </p>
+
+        <div class="about-details">
+          <div class="detail-item"><i class="fas fa-map-marker-alt"></i><span>Dhaka, Bangladesh</span></div>
+          <div class="detail-item"><i class="fas fa-envelope"></i><span>mrali02@niter.edu.bd</span></div>
+          <div class="detail-item"><i class="fas fa-phone"></i><span>+880 1601306727</span></div>
+          <div class="detail-item"><i class="fas fa-language"></i><span>English (IELTS 7.5) · Bangla (Native) · German (Beginner)</span></div>
+        </div>
+        <a href="assets/Raihan inf.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== SKILLS ========== -->
+<section class="section section-dark" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What I work with</span>
+      <h2 class="section-title">My <span>Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h3>Programming Languages</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>C++</span><span>SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+        <h3>Machine Learning & Deep Learning</h3>
+        <div class="skill-tags">
+          <span>Scikit-learn</span><span>TensorFlow</span><span>PyTorch</span>
+          <span>XGBoost</span><span>CNN</span><span>NLP</span><span>SHAP (XAI)</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+        <h3>Agentic AI & Automation</h3>
+        <div class="skill-tags">
+          <span>LLM</span><span>Agent-based Systems</span><span>n8n</span>
+          <span>Workflow Automation</span><span>Federated Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3>Data Analytics</h3>
+        <div class="skill-tags">
+          <span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+          <span>Seaborn</span><span>Excel</span><span>Power BI</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <h3>Data Management</h3>
+        <div class="skill-tags">
+          <span>MySQL</span><span>PostgreSQL</span><span>ETL Pipeline</span>
+          <span>Data Cleaning</span><span>Feature Engineering</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+        <h3>Tools & Web</h3>
+        <div class="skill-tags">
+          <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span>
+          <span>Git/GitHub</span><span>Jupyter</span><span>VS Code</span>
+          <span>Google Colab</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== EXPERIENCE ========== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Work history</span>
+      <h2 class="section-title">Professional <span>Experience</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-company-info">
+              <img src="assets/hex.jpg" alt="HexSoftwares" class="company-logo"
+                onerror="this.style.display='none'">
+              <div>
+                <h3>Data Science Intern</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> HexSoftwares</span>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Oct 2025 – Nov 2025</span>
+              <a href="https://drive.google.com/drive/folders/11yDGqLTVdbCsqR3votJi5KJQZsomKjH-" target="_blank" class="verify-btn">
+                <i class="fas fa-check-circle"></i> Verified
+              </a>
+            </div>
+          </div>
+          <ul class="timeline-points">
+            <li>Developed and fine-tuned machine learning models for real-world data tasks.</li>
+            <li>Performed data preprocessing, feature engineering, and model evaluation.</li>
+            <li>Worked on end-to-end ML pipelines from raw data to deployment-ready predictions.</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML Models</span><span>EDA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-company-info">
+              <img src="assets/codealpha.jpeg" alt="CodeAlpha" class="company-logo"
+                onerror="this.style.display='none'">
+              <div>
+                <h3>Machine Learning Intern</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> CodeAlpha</span>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jul 2025 – Sep 2025</span>
+              <a href="https://drive.google.com/drive/folders/1PyJs6yegbpjHnGJuy3QOXqdx-009jHro" target="_blank" class="verify-btn">
+                <i class="fas fa-check-circle"></i> Verified
+              </a>
+            </div>
+          </div>
+          <ul class="timeline-points">
+            <li>Built ML models to generate actionable business insights from data.</li>
+            <li>Conducted exploratory data analysis and visualization for stakeholders.</li>
+            <li>Applied classification and regression techniques to solve domain-specific problems.</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Python</span><span>EDA</span><span>Classification</span><span>Power BI</span><span>ML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div class="timeline-company-info">
+              <img src="assets/the-developers-arena-original.jpg" alt="The Developer Arena" class="company-logo"
+                onerror="this.style.display='none'">
+              <div>
+                <h3>Deep Learning Intern</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> The Developer Arena</span>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Nov 2025 – Apr 2026</span>
+              <a href="https://drive.google.com/file/d/1hvwqIOb9MHKQcimsZdcErlMsnNdMh6Wi/view" target="_blank" class="verify-btn">
+                <i class="fas fa-check-circle"></i> Verified
+              </a>
+            </div>
+          </div>
+          <ul class="timeline-points">
+            <li>Built real world project insights from data.</li>
+            <li>Conducted exploratory data analysis and visualization for stakeholders.</li>
+            <li>Applied classification and regression techniques to solve domain-specific problems.</li>
+          </ul>
+          <div class="timeline-tags">
+            <span>Python</span><span>EDA</span><span>Classification</span><span>Power BI</span><span>ML</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<section class="section section-dark" id="education">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Academic background</span>
+      <h2 class="section-title">My <span>Education</span></h2>
+    </div>
+
+    <div class="edu-layout">
+
+      <!-- Featured Card — BSc -->
+      <div class="edu-featured">
+        <div class="edu-featured-top">
+          <div class="edu-featured-left">
+            <div class="edu-icon-lg"><i class="fas fa-university"></i></div>
+            <div>
+              <span class="edu-badge">Current</span>
+              <h3 class="edu-featured-title">B.Sc in Computer Science &amp; Engineering</h3>
+              <p class="edu-inst">University of Dhaka </p>
+              <p class="edu-sub"> Dhaka,Bangladesh</p>
+            </div>
+          </div>
+          <div class="edu-featured-stats">
+            <div class="edu-stat">
+              <span class="edu-stat-value">3.56</span>
+              <span class="edu-stat-label">CGPA / 4.00</span>
+            </div>
+            <div class="edu-stat-divider"></div>
+            <div class="edu-stat">
+              <span class="edu-stat-value">7th</span>
+              <span class="edu-stat-label">Semester</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Subjects -->
+        <div class="edu-courses">
+          <span class="edu-courses-label">
+            <i class="fas fa-brain"></i> Core Subjects
+          </span>
+          <div class="edu-course-tags">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Data Science</span>
+            <span>Artificial intelligence </span>
+            <span>Natural Language Processing</span>
+            <span>Digital Image Processing (DIP)</span>
+            <span>Data Structures & Algorithms</span>
+            <span>Database Systems</span>
+          </div>
+        </div>
+
+        <div class="edu-featured-footer">
+          <span><i class="fas fa-calendar-alt"></i> 2022 – Present</span>
+          <span><i class="fas fa-clock"></i> Session: 2020–21</span>
+          <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+          <span><i class="edu-verify-group"></i> Dhaka, Bangladesh</span>
+          <a href="https://drive.google.com/drive/folders/11yDGqLTVdbCsqR3votJi5KJQZsomKjH-" target="_blank" rel="noopener noreferrer" class="edu-verify-btn">
+         <i class="fas fa-file-alt"></i> Transcripts
+         </a>
+          
+          <span class="edu-active-dot"><span class="dot-pulse"></span> Active</span>
+        </div>
+      </div>
+
+      <!-- Compact Cards — HSC & SSC -->
+      <div class="edu-compact-grid">
+
+        <div class="edu-compact-card">
+          <div class="edu-compact-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-compact-body">
+            <div class="edu-compact-header">
+              <h4>Higher Secondary Certificate</h4>
+              <span class="edu-year-badge">2020</span>
+            </div>
+            <p class="edu-inst">Masjid Mission Academy</p>
+            <p class="edu-sub">Rajshahi, Bangladesh</p>
+            <div class="edu-compact-meta">
+              <span><i class="fas fa-book"></i> Science Group</span>
+              <span><i class="fas fa-star"></i> GPA: 5.00 / 5.00</span>
+              <span><i class="fas fa-clock"></i> Session: 2019–20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-compact-card">
+          <div class="edu-compact-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-compact-body">
+            <div class="edu-compact-header">
+              <h4>Secondary School Certificate</h4>
+              <span class="edu-year-badge">2018</span>
+            </div>
+            <p class="edu-inst">Hummyun Reza High School</p>
+            <p class="edu-sub">Chapai-Nawabgonj, Rajshahi</p>
+            <div class="edu-compact-meta">
+              <span><i class="fas fa-book"></i> Science Group</span>
+              <span><i class="fas fa-star"></i> GPA: 5.00 / 5.00</span>
+              <span><i class="fas fa-clock"></i> Session: 2017–18</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========My Project ========== -->
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">What I have built</span>
+      <h2 class="section-title">My <span>Projects</span></h2>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+      <button class="filter-btn" data-filter="ai-automation">AI Automation</button>
+      <button class="filter-btn" data-filter="artificial-intelligence">Artificial Intelligence</button>
+      <button class="filter-btn" data-filter="generative-ai">Generative AI</button>
+      <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+      <button class="filter-btn" data-filter="data-analyst">Data Analyst</button>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- ===== ORIGINAL PROJECTS ===== -->
+
+      <div class="project-card project-card-thesis" data-category="machine-learning artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Paper"><i class="fas fa-file-alt"></i></a>
+          </div>
+        </div>
+        <span class="project-featured-badge">&#11088; Thesis Research</span>
+        <h3>Federated Learning with XAI for Population &amp; Life Expectancy Prediction</h3>
+        <p>Federated Learning combined with Explainable AI (SHAP) to predict population growth and life expectancy, supporting healthcare and education planning.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Results: &#8212; &nbsp;(update this)</span>
+        </div>
+        <div class="project-tags">
+          <span>Federated Learning</span><span>XGBoost</span><span>SHAP</span><span>Python</span><span>XAI</span><span>Healthcare AI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning data-analyst">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-smog"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Time-Series Forecasting of CO &amp; NO&#x2082; Levels</h3>
+        <p>Developed ML models to forecast daily and hourly concentrations of Carbon Monoxide and Nitrogen Dioxide using historical environmental data.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> RMSE: &#8212; &nbsp;|&nbsp; MAE: &#8212; &nbsp;(update this)</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Time-Series</span><span>Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-comment-dots"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Sentiment Analysis on Amazon Reviews</h3>
+        <p>Built an NLP model to analyze customer sentiments from Amazon product reviews, classifying feedback into positive, negative, and neutral categories.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> F1-Score: &#8212; &nbsp;(update this)</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>TF-IDF</span><span>BoW</span><span>Scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-film"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Movie Recommendation System</h3>
+        <p>Developed a collaborative filtering-based recommendation system that suggests movies to users based on their viewing history and preferences.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Precision@K: &#8212; &nbsp;(update this)</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Collaborative Filtering</span><span>Pandas</span><span>NumPy</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="computer-vision artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-pen-nib"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Handwritten Character Recognition</h3>
+        <p>Implemented a deep learning CNN model to recognize handwritten characters and digits from images with high accuracy.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Accuracy: &#8212; % &nbsp;(update this)</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>CNN</span><span>TensorFlow</span><span>Keras</span><span>Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning data-analyst">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-credit-card"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Credit Scoring Model</h3>
+        <p>Designed an ML model to evaluate creditworthiness of individuals based on financial history and risk-related factors.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> AUC-ROC: &#8212; &nbsp;(update this)</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>XGBoost</span><span>Classification</span><span>Scikit-learn</span><span>EDA</span>
+        </div>
+      </div>
+
+      <!-- ===== MACHINE LEARNING ===== -->
+
+      <div class="project-card" data-category="machine-learning">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-home"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>House Price Prediction</h3>
+        <p>Built a regression model to predict house prices based on location, size, amenities, and other key features using real estate datasets.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Regression &middot; Feature Engineering &middot; EDA</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Regression</span><span>EDA</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-user-times"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Customer Churn Prediction</h3>
+        <p>Developed a classification model to predict customer churn for telecom data, helping businesses retain high-risk customers proactively.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Classification &middot; XGBoost &middot; SMOTE</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>XGBoost</span><span>Classification</span><span>Scikit-learn</span><span>SMOTE</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Fraud Detection in Transactions</h3>
+        <p>Built an anomaly detection model to identify fraudulent financial transactions from imbalanced datasets with high precision.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Anomaly Detection &middot; Imbalanced Data</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>XGBoost</span><span>SMOTE</span><span>Scikit-learn</span><span>EDA</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning">
+        <div class="project-top">
+          <div class="project-icon"><i class="fab fa-twitter"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Sentiment Analysis on Tweets</h3>
+        <p>Developed an NLP pipeline to classify tweet sentiments as positive, negative, or neutral using TF-IDF and machine learning.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> NLP &middot; TF-IDF &middot; Classification</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>TF-IDF</span><span>Scikit-learn</span><span>NLTK</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="machine-learning">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Stock Price Forecasting</h3>
+        <p>Built a time-series forecasting model using LSTM and ARIMA to predict stock prices based on historical market data.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Time-Series &middot; LSTM &middot; ARIMA</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>LSTM</span><span>ARIMA</span><span>Pandas</span><span>TensorFlow</span>
+        </div>
+      </div>
+
+      <!-- ===== AI AUTOMATION ===== -->
+
+      <div class="project-card" data-category="ai-automation">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Automated Email Scheduler</h3>
+        <p>Built an intelligent email scheduling system that automates personalized email campaigns based on user behavior and time-zone optimization.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Email Automation &middot; Scheduling</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>SMTP</span><span>n8n</span><span>Automation</span><span>Scheduling</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ai-automation">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Workflow Automation with n8n</h3>
+        <p>Designed multi-step workflow automations using n8n to connect APIs, databases, and communication tools without manual intervention.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> n8n &middot; API Integration &middot; Workflow</span>
+        </div>
+        <div class="project-tags">
+          <span>n8n</span><span>REST API</span><span>Webhooks</span><span>Automation</span><span>JSON</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ai-automation artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-comments"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Chatbot for FAQs</h3>
+        <p>Developed an AI-powered FAQ chatbot using NLP to handle common user queries intelligently with fallback escalation to human agents.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> NLP &middot; Chatbot &middot; Intent Classification</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>Rasa</span><span>Intent Classification</span><span>NLU</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ai-automation">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-file-invoice"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Invoice Processing Bot</h3>
+        <p>Created an RPA bot to extract, validate, and store invoice data from PDFs automatically, reducing manual data entry by 90%.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> RPA &middot; OCR &middot; Data Extraction</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>OCR</span><span>Pandas</span><span>Automation</span><span>PDF Parsing</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ai-automation">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-share-alt"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Social Media Auto-Poster</h3>
+        <p>Built an automation tool that schedules and posts content to multiple social media platforms from a single dashboard using APIs.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Social Media API &middot; Scheduling</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>API Integration</span><span>n8n</span><span>Scheduling</span><span>OAuth</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ai-automation data-analyst">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-broom"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Data Cleaning Pipeline</h3>
+        <p>Designed a reusable automated data cleaning pipeline to handle missing values, outliers, encoding, and feature scaling in datasets.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> ETL &middot; Data Preprocessing &middot; Automation</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>ETL</span><span>Scikit-learn</span><span>NumPy</span>
+        </div>
+      </div>
+
+      <!-- ===== ARTIFICIAL INTELLIGENCE ===== -->
+
+      <div class="project-card" data-category="artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Smart Healthcare Assistant</h3>
+        <p>Built an AI assistant that answers medical queries, analyzes symptoms, and suggests preliminary diagnoses using a knowledge-based NLP model.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> NLP &middot; Healthcare AI &middot; Knowledge Base</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>BERT</span><span>Knowledge Graph</span><span>Healthcare AI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AI-Powered Tutor</h3>
+        <p>Developed a personalized AI tutor that adapts learning content based on student performance, providing hints and explanations dynamically.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Adaptive Learning &middot; NLP &middot; Personalization</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>LLM</span><span>ML</span><span>Personalization</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-paper-plane"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Autonomous Drone Navigation</h3>
+        <p>Designed a reinforcement learning model for autonomous drone pathfinding that avoids obstacles in dynamic environments.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Reinforcement Learning &middot; Pathfinding</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Reinforcement Learning</span><span>OpenAI Gym</span><span>PyTorch</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="artificial-intelligence computer-vision">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-traffic-light"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AI Traffic Management</h3>
+        <p>Built an AI system that analyzes live traffic patterns and dynamically adjusts signal timings to reduce congestion.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Computer Vision &middot; Optimization &middot; RL</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Computer Vision</span><span>RL</span><span>OpenCV</span><span>TensorFlow</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-microphone"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Voice-Controlled Home Assistant</h3>
+        <p>Developed a voice-activated smart home assistant that controls devices, answers queries, and sets reminders using speech recognition.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Speech Recognition &middot; NLP &middot; IoT</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>SpeechRecognition</span><span>NLP</span><span>IoT</span><span>pyttsx3</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AI-Powered Resume Screener</h3>
+        <p>Created an intelligent resume screening tool that ranks candidates based on job description matching using NLP similarity scoring.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> NLP &middot; Similarity Matching &middot; HR AI</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>BERT</span><span>Cosine Similarity</span><span>Scikit-learn</span>
+        </div>
+      </div>
+
+      <!-- ===== GENERATIVE AI ===== -->
+
+      <div class="project-card" data-category="generative-ai">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-paint-brush"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AI Art Generator</h3>
+        <p>Built a generative AI system that creates unique digital artwork from text prompts using diffusion models and style transfer techniques.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Stable Diffusion &middot; Text-to-Image</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Stable Diffusion</span><span>Diffusion Models</span><span>PIL</span><span>Transformers</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="generative-ai">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-music"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Text-to-Music Generator</h3>
+        <p>Developed a generative model that composes original music pieces based on mood, tempo, and genre prompts using deep learning.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Generative AI &middot; Music Synthesis &middot; LSTM</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>LSTM</span><span>Magenta</span><span>Deep Learning</span><span>Audio Processing</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="generative-ai">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-pen-fancy"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AI Blog Writer</h3>
+        <p>Created an LLM-based tool that generates SEO-optimized blog articles from topic keywords with structured headings and human-like tone.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> LLM &middot; Content Generation &middot; NLP</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>LLM</span><span>GPT API</span><span>Prompt Engineering</span><span>NLP</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="generative-ai">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-ad"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Product Ad Generator</h3>
+        <p>Built a generative AI tool that creates compelling product advertisement copy and visuals from simple product descriptions.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> LLM &middot; Image Generation &middot; Marketing AI</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>GPT API</span><span>Stable Diffusion</span><span>Prompt Engineering</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="generative-ai">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-book-open"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Storytelling Bot</h3>
+        <p>Developed an interactive storytelling chatbot that generates dynamic, branching narratives based on user choices using LLMs.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> LLM &middot; Chatbot &middot; Narrative AI</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>LLM</span><span>GPT API</span><span>Prompt Engineering</span><span>Flask</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="generative-ai">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-shapes"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Logo Generator</h3>
+        <p>Created a generative AI system that designs unique logos from brand name and style inputs using text-to-image models.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Text-to-Image &middot; Brand AI &middot; Design</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Stable Diffusion</span><span>DALL&middot;E API</span><span>PIL</span><span>Prompt Engineering</span>
+        </div>
+      </div>
+
+      <!-- ===== COMPUTER VISION ===== -->
+
+      <div class="project-card" data-category="computer-vision">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-user-check"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Face Recognition Attendance System</h3>
+        <p>Built a real-time face recognition system for automated attendance marking using deep learning facial embeddings.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Face Recognition &middot; Deep Learning &middot; Real-time</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>OpenCV</span><span>DeepFace</span><span>TensorFlow</span><span>Real-time CV</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="computer-vision">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-store"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Object Detection for Retail</h3>
+        <p>Developed a YOLO-based object detection system to track products on retail shelves and detect out-of-stock items automatically.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> YOLO &middot; Object Detection &middot; Retail AI</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>PyTorch</span><span>Object Detection</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="computer-vision artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-x-ray"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Medical Image Analysis</h3>
+        <p>Built a CNN-based model to detect abnormalities in medical images (X-ray/MRI), assisting radiologists in early diagnosis.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> CNN &middot; Medical AI &middot; Classification</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>CNN</span><span>TensorFlow</span><span>Keras</span><span>Medical AI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="computer-vision">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-road"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Traffic Sign Recognition</h3>
+        <p>Developed a deep learning model to accurately classify traffic signs in real-time for autonomous vehicle applications.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> CNN &middot; Classification &middot; Real-time CV</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>CNN</span><span>TensorFlow</span><span>OpenCV</span><span>Deep Learning</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="computer-vision">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-hand-paper"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Gesture Recognition System</h3>
+        <p>Created a real-time hand gesture recognition system using MediaPipe and CNN that maps gestures to computer commands.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> MediaPipe &middot; CNN &middot; Real-time</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>MediaPipe</span><span>CNN</span><span>OpenCV</span><span>Real-time CV</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="computer-vision">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-car"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>License Plate Recognition</h3>
+        <p>Built an OCR-based license plate detection and recognition system for automated vehicle entry systems using OpenCV and deep learning.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> OCR &middot; Object Detection &middot; OpenCV</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>OpenCV</span><span>OCR</span><span>YOLO</span><span>Tesseract</span>
+        </div>
+      </div>
+
+      <!-- ===== DATA ANALYST ===== -->
+
+      <div class="project-card" data-category="data-analyst">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Sales Dashboard (Power BI)</h3>
+        <p>Designed an interactive Power BI dashboard to visualize sales KPIs, regional performance, and revenue trends for business decision-making.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Power BI &middot; DAX &middot; Data Visualization</span>
+        </div>
+        <div class="project-tags">
+          <span>Power BI</span><span>DAX</span><span>Excel</span><span>SQL</span><span>Data Visualization</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data-analyst machine-learning">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-users"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Customer Segmentation</h3>
+        <p>Applied K-Means and hierarchical clustering to segment customers by behavior, enabling targeted marketing strategies.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Clustering &middot; K-Means &middot; EDA</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>K-Means</span><span>Pandas</span><span>Scikit-learn</span><span>Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data-analyst">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>E-commerce Trend Analysis</h3>
+        <p>Analyzed e-commerce transaction data to uncover purchasing trends, peak seasons, and product performance insights.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> EDA &middot; Trend Analysis &middot; Visualization</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>SQL</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data-analyst artificial-intelligence">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-hospital"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Healthcare Data Insights</h3>
+        <p>Performed exploratory data analysis on patient records to identify risk factors, treatment outcomes, and operational inefficiencies.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> EDA &middot; Healthcare Analytics &middot; SQL</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>SQL</span><span>Matplotlib</span><span>Power BI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data-analyst">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-coins"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Financial Risk Analysis</h3>
+        <p>Analyzed financial datasets to identify credit risk, loan default probabilities, and investment risk using statistical modeling.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Statistical Analysis &middot; Risk Modeling</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scipy</span><span>Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data-analyst ai-automation">
+        <div class="project-top">
+          <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>Social Media Engagement Report</h3>
+        <p>Built an automated reporting tool to analyze social media engagement metrics, follower growth, and content performance across platforms.</p>
+        <div class="project-metrics">
+          <span class="metric"><i class="fas fa-chart-line"></i> Data Analytics &middot; Visualization &middot; Automation</span>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>API Integration</span><span>Power BI</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SEE MORE BUTTON -->
+    <div class="see-more-wrapper" id="seeMoreWrapper">
+      <button class="btn-see-more" id="seeMoreBtn">
+        <i class="fas fa-chevron-down"></i> See More Projects
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========== CERTIFICATIONS ========== -->
+<section class="section section-dark" id="certifications">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Verified learning</span>
+      <h2 class="section-title">Courses & <span>Certifications</span></h2>
+    </div>
+    <div class="cert-grid" id="certGrid">
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div class="cert-body">
+          <h4>Data Science & Machine Learning</h4>
+          <span class="cert-id">ID: 32c6f51</span>
+          <a href="https://aiquest.org/verification/" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div class="cert-body">
+          <h4>Deep Learning with PyTorch</h4>
+          <span class="cert-id">Azim Group</span>
+          <a href="https://www.datacamp.com/statement-of-accomplishment/course/7b9ec6a8d207b0bcd0a214a12380046c94632f8f?raw=1" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div class="cert-body">
+          <h4>Data Engineering</h4>
+          <span class="cert-id">ID: a49c3d8784</span>
+          <a href="https://itronixsolutions.com/courses/certificate/a49c3d8784" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div class="cert-body">
+          <h4>AI Fundamentals</h4>
+          <span class="cert-id">Azim Group</span>
+          <a href="https://www.coursera.org/account/accomplishments/verify/RSCP2W6SK6I0" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fab fa-google"></i></div>
+        <div class="cert-body">
+          <h4>Google Data Analytics</h4>
+          <span class="cert-id">ID: 5V71917MZBDB</span>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/5V71917MZBDB" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="cert-body">
+          <h4>Advanced Data Analytics</h4>
+          <span class="cert-id">ID: LZLI0IDVD8LF</span>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/LZLI0IDVD8LF" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-atom"></i></div>
+        <div class="cert-body">
+          <h4>Intro to Data Science</h4>
+          <span class="cert-id">IBM ID: 44fa5ad8f46b4f8792ec3f44edcef76b</span>
+          <a href="https://courses.edx.org/certificates/44fa5ad8f46b4f8792ec3f44edcef76b" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div class="cert-body">
+          <h4>Robotic Camp 2021</h4>
+          <span class="cert-id">ID: 22020224</span>
+          <a href="https://drive.google.com/file/d/1pd78QzAWApR1JjkTroR7zCCOtpQi8xVi/view" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div class="cert-body">
+          <h4>Python for AI</h4>
+          <span class="cert-id">ID: 12747</span>
+          <a href="https://aiixx.ai/certificates/view/12747" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div class="cert-body">
+          <h4>CUET CSE Fest 2025</h4>
+          <span class="cert-id">Azim Group</span>
+          <a href="https://drive.google.com/file/d/1Q36sZ3XHaRoGhyHnB3JN0f4JevougSLr/view" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+        <div class="cert-body">
+          <h4>Data Engineering Professional</h4>
+          <span class="cert-id">Azim Group</span>
+          <a href="https://itronixsolutions.com/courses/certificate/a49c3d8784" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SEE MORE BUTTON -->
+    <div class="see-more-wrapper" id="certSeeMoreWrapper">
+      <button class="btn-see-more" id="certSeeMoreBtn">
+        <i class="fas fa-chevron-down"></i> See More Certifications
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== RESEARCH ========== -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Academic research</span>
+      <h2 class="section-title">Research & <span>Publications</span></h2>
+    </div>
+    <div class="research-list">
+
+      <div class="research-card">
+        <div class="research-num">01</div>
+        <div class="research-content">
+          <span class="research-status status-ongoing">Under Review</span>
+          <h3>Federated Learning with Explainable AI for Population and Life Expectancy Prediction to Support Healthcare and Education Planning</h3>
+          <p><strong>Authors:</strong> MD Raihan Ali, Sajin Sannasi &nbsp;·&nbsp; <strong>Supervisor:</strong> Asst. Prof. Anichur Rahman</p>
+          <p class="research-venue">Dept. of Computer Science and Engineering · NITER, University of Dhaka</p>
+          <div class="research-links">
+            <a href="#" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn-sm"><i class="fas fa-file-alt"></i> Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-num">02</div>
+        <div class="research-content">
+          <span class="research-status status-done">Completed</span>
+          <h3>Combining BoW, TF-IDF Features and Performance Analysis of CNN for Text Classification</h3>
+          <p>Exploring hybrid feature extraction for NLP and comparing performance with deep learning CNN architectures.</p>
+          <p class="research-venue">National Institute of Textile Engineering & Research (NITER)</p>
+          <div class="research-links">
+            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> View Paper</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== ACHIEVEMENTS ========== -->
+<section class="section section-dark" id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">Achievements & <span>Awards</span></h2>
+    </div>
+    <div class="achieve-grid">
+
+      <div class="achieve-card">
+        <i class="fas fa-trophy"></i>
+        <h4>International General Science Olympiad</h4>
+        <p>Participated in the International General Science Olympiad for Private Constituent Institutions of the University of Dhaka, organized by Research and Integrated Thought Ltd. (RIT).</p>
+      </div>
+
+      <div class="achieve-card">
+        <i class="fas fa-language"></i>
+        <h4>IELTS Band Score 7.5</h4>
+        <p>Achieved IELTS Band Score of 7.5, demonstrating strong English proficiency in academic and professional communication.</p>
+      </div>
+
+      <div class="achieve-card">
+        <i class="fas fa-drone"></i>
+        <h4>Robotic Camp 2021</h4>
+        <p>Completed an intensive robotic programming and hardware camp organized by Bangladesh Flying Labs, Savar, Dhaka. Certificate ID: 22020224.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== BOOKS ========== -->
+<section id="books" class="section">
+  <div class="container">
+    <h2 class="section-title" style="text-align: center;">My <span style="color: #00c8b4;">Books</span></h2>
+
+    <div class="books-grid">
+
+      <!-- Book 1 -->
+      <div class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+          <div class="book-cover-art">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <div class="book-cover-overlay">
+            <a href="YOUR_LINK_1" target="_blank" rel="noopener noreferrer" class="book-read-btn">
+              <i class="fas fa-external-link-alt"></i> View Book
+            </a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-badge">Research</span>
+          <h3>Research for Beginners</h3>
+          <p>A comprehensive beginner-friendly guide to understanding research methodology, academic writing, and scientific thinking for students.</p>
+          <div class="book-meta">
+            <span><i class="fas fa-user"></i> MD Raihan Ali</span>
+            <span><i class="fas fa-tag"></i> Research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #0d2137 0%, #1a3a5c 50%, #00c8b4 100%);">
+          <div class="book-cover-art">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="book-cover-overlay">
+            <a href="YOUR_LINK_2" target="_blank" rel="noopener noreferrer" class="book-read-btn">
+              <i class="fas fa-external-link-alt"></i> View Book
+            </a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-badge" style="background: rgba(0,200,180,0.1); color: #00c8b4; border-color: rgba(0,200,180,0.25);">Machine Learning</span>
+          <h3>The Fun of Machine Learning</h3>
+          <p>Makes machine learning approachable and enjoyable — covering core concepts, real-world examples, and hands-on intuition for aspiring data scientists.</p>
+          <div class="book-meta">
+            <span><i class="fas fa-user"></i> MD Raihan Ali</span>
+            <span><i class="fas fa-tag"></i> ML</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #0a0a1a 0%, #1c1c3a 50%, #7c4dff 100%);">
+          <div class="book-cover-art">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="book-cover-overlay">
+            <a href="YOUR_LINK_3" target="_blank" rel="noopener noreferrer" class="book-read-btn">
+              <i class="fas fa-external-link-alt"></i> View Book
+            </a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-badge" style="background: rgba(124,77,255,0.1); color: #7c4dff; border-color: rgba(124,77,255,0.25);">Advanced</span>
+          <h3>Advanced Part of Machine Learning</h3>
+          <p>Deep dives into advanced ML algorithms, model optimization, ensemble methods, and cutting-edge techniques for experienced practitioners.</p>
+          <div class="book-meta">
+            <span><i class="fas fa-user"></i> MD Raihan Ali</span>
+            <span><i class="fas fa-tag"></i> ML · Advanced</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #0d2010 0%, #1a3d1a 50%, #27ae60 100%);">
+          <div class="book-cover-art">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="book-cover-overlay">
+            <a href="YOUR_LINK_4" target="_blank" rel="noopener noreferrer" class="book-read-btn">
+              <i class="fas fa-external-link-alt"></i> View Book
+            </a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-badge" style="background: rgba(39,174,96,0.1); color: #27ae60; border-color: rgba(39,174,96,0.25);">Automation</span>
+          <h3>Easy Automation</h3>
+          <p>A practical guide to automating repetitive tasks using Python and modern tools — saving time, reducing errors, and boosting productivity.</p>
+          <div class="book-meta">
+            <span><i class="fas fa-user"></i> MD Raihan Ali</span>
+            <span><i class="fas fa-tag"></i> Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 5 -->
+      <div class="book-card">
+        <div class="book-cover" style="background: linear-gradient(135deg, #1a0d2e 0%, #2d1b4e 50%, #e91e8c 100%);">
+          <div class="book-cover-art">
+            <i class="fas fa-magic"></i>
+          </div>
+          <div class="book-cover-overlay">
+            <a href="YOUR_LINK_5" target="_blank" rel="noopener noreferrer" class="book-read-btn">
+              <i class="fas fa-external-link-alt"></i> View Book
+            </a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-badge" style="background: rgba(233,30,140,0.1); color: #e91e8c; border-color: rgba(233,30,140,0.25);">Generative AI</span>
+          <h3>Made with AI</h3>
+          <p>Explores how AI tools can be used to create content, automate workflows, and build projects — a guide for the modern AI-first creator.</p>
+          <div class="book-meta">
+            <span><i class="fas fa-user"></i> MD Raihan Ali</span>
+            <span><i class="fas fa-tag"></i> AI · Generative</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ========== CONTACT ========== -->
+<section class="section section-dark" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Let's connect</span>
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>I am open to opportunities</h3>
+        <p>Whether it's a research collaboration, ML project, internship, freelance work,
+           or just a tech conversation — feel free to reach out!</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email</strong><p>mrali02@niter.edu.bd</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div><strong>Phone</strong><p>+880 1601306727</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Location</strong><p>Dhaka, Bangladesh</p></div>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="https://linkedin.com/in/your-link" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/your-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://kaggle.com/your-link" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+          <a href="https://scholar.google.com/citations?user=your-id" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Subject" />
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <p>Designed & Built by <span>MD Raihan Ali</span> &copy; 2026</p>
+    <p class="footer-note">ML Engineer | AI Researcher | AI Automation Specialist</p>
+  </div>
+</footer>
+
+<a href="#hero" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+<script src="script.js"></script>
+</body>
+</html>
