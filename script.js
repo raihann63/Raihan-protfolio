@@ -240,3 +240,97 @@ if (certCount) {
 
 // Page load এ render
 renderCerts(false);
+
+// // ============================================
+// // Thesis hover: tune + voice
+// // ============================================
+
+// const thesisBox = document.querySelector('.edu-thesis');
+// let audioCtx = null;
+// let lastPlayed = 0;
+
+// function unlockAudio() {
+//   audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+//   if (audioCtx.state === 'suspended') audioCtx.resume();
+// }
+// ['click', 'touchstart', 'keydown'].forEach(evt =>
+//   window.addEventListener(evt, unlockAudio, { once: true, passive: true })
+// );
+
+// function playTune() {
+//   if (!audioCtx || audioCtx.state !== 'running') return;
+
+//   const notes = [523.25, 659.25, 783.99];
+//   const now = audioCtx.currentTime;
+
+//   notes.forEach((freq, i) => {
+//     const osc = audioCtx.createOscillator();
+//     const gain = audioCtx.createGain();
+//     const t = now + i * 0.12;
+
+//     osc.type = 'sine';
+//     osc.frequency.value = freq;
+//     gain.gain.setValueAtTime(0, t);
+//     gain.gain.linearRampToValueAtTime(0.2, t + 0.02);
+//     gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+
+//     osc.connect(gain).connect(audioCtx.destination);
+//     osc.start(t);
+//     osc.stop(t + 0.4);
+//   });
+// }
+
+// function speak(text) {
+//   if (!('speechSynthesis' in window)) return;
+//   window.speechSynthesis.cancel();
+//   const u = new SpeechSynthesisUtterance(text);
+//   u.lang = 'en-US';
+//   u.rate = 0.95;
+//   u.pitch = 1;
+//   u.volume = 1;
+//   window.speechSynthesis.speak(u);
+// }
+
+// function onThesisEnter() {
+//   const n = Date.now();
+//   if (n - lastPlayed < 3000) return;
+//   lastPlayed = n;
+//   // playTune();
+//   setTimeout(() => speak('Raihan\'s Undergraduate Research:Federated Learning with Explainable AI for Population and Life Expectancy Prediction to Support Healthcare and Education Planning '), 400); // tune-er por bolbe
+// }
+
+// if (thesisBox) {
+//   thesisBox.addEventListener('mouseenter', onThesisEnter);
+//   thesisBox.addEventListener('touchstart', onThesisEnter, { passive: true });
+// }
+
+
+
+// ============================================
+// Thesis hover voice (only one)
+// ============================================
+(function () {
+  console.log('Thesis voice script loaded');
+
+  const box = document.querySelector('.edu-thesis');
+  console.log('Thesis box:', box);
+  if (!box) return;
+
+  const audio = new Audio('assets/thesis_voice.mp3');
+  audio.preload = 'auto';
+  audio.addEventListener('error', () => console.log('Audio FAILED to load:', audio.src));
+
+  let last = 0;
+  function play() {
+    const now = Date.now();
+    if (now - last < 9000) return;
+    last = now;
+    audio.currentTime = 0;
+    audio.play()
+      .then(() => console.log('Playing'))
+      .catch(err => console.log('Blocked:', err.name));
+  }
+
+  box.addEventListener('mouseenter', play);
+  box.addEventListener('click', play);
+})();
